@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>PROMEDIO DE IMC</h1>
+<script>
+	function imprimir(frase){
+		document.write(frase);
+		document.write("<br>");
+	}
+	function calcularImc(peso,altura){
+		imc=peso/(altura*altura)
+		return imc;
+	}
+	var nombre1="Farid";
+	var nombre2="Citlaly";
+	var imcFarid=calcularImc(85,1.76);
+	var imcCitlaly=calcularImc(62,1.66);
+	imprimir("El IMC de "+nombre1+" es: "+imcFarid);
+	imprimir("El IMC de "+nombre2+" es: "+imcCitlaly);
+	imprimir("El promedio del imc de  "+nombre1+" y "+nombre2+" es: "+(calcularImc(85,1.76)+calcularImc(62,1.66))/2);
+	
+
+
+</script>
