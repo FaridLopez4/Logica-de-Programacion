@@ -5,15 +5,18 @@
 		document.write(frase);
 		document.write("<br>");
 	}
-	function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2){
-		imc1=peso1/(altura1*altura1);
-		imc2=peso2/(altura2*altura2);
-		imprimir("El imc de " +nombre1+ " es de: "+imc1);
-		imprimir("El imc de " +nombre2+ " es de: "+imc2);
-		imprimir("El promedio de los imc es de: "+(imc1+imc2)/2);
+	function calcularImc(peso,altura){
+		imc=peso/(altura*altura)
+		return imc;
 	}
-	calcularImc(85,1.76,"Farid",62,1.66,"Citlaly");
-	calcularImc(58,1.65,"Juan",70,1.87,"Majo");
+	var nombre1="Farid";
+	var nombre2="Citlaly";
+	var imcFarid=calcularImc(85,1.76);
+	var imcCitlaly=calcularImc(62,1.66);
+	imprimir("El IMC de "+nombre1+" es: "+imcFarid);
+	imprimir("El IMC de "+nombre2+" es: "+imcCitlaly);
+	imprimir("El promedio del imc de  "+nombre1+" y "+nombre2+" es: "+(calcularImc(85,1.76)+calcularImc(62,1.66))/2);
+	
 
 
 </script>
