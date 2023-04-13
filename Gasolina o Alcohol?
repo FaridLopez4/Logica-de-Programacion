@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<h3>¿Alcohol o gasolina?</h3>
+<script>
+	var tanque=40;
+	var recorridoGas=480;
+	var recorridoAlc=300;
+	var eficienciaGas=recorridoGas/tanque;
+	var eficienciaAlc=recorridoAlc/tanque;
+	document.write("La eficiencia por litro de la gasolina es "+eficienciaGas);
+	document.write("<br>");
+	document.write("La eficiencia por litro del Alcohol es: "+eficienciaAlc);
+
+	
+</script>
