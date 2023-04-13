@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<h2>CALCULAR IMC</h2>
+<script>
+	function imprimir(frase){
+		document.write(frase);
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function calcularImc(peso,altura){
+		imc=peso/(altura*altura);
+		return(imc);
+	}
+	pesoFarid=81;
+    alturaFarid=1.76;
+    imcFarid=calcularImc(pesoFarid,alturaFarid);
+	imprimir("La altura de Farid es: "+alturaFarid+" Mts")
+	imprimir("El peso de Farid es: "+pesoFarid+" Kg")
+	imprimir("El IMC de Farid es: "+imcFarid);	
+
+	pesoCitlaly=62;
+	alturaCitlaly=1.66;
+	imcCitlaly=calcularImc(pesoCitlaly,alturaCitlaly);
+	imprimir("La altura de Citlaly es: "+alturaCitlaly+" Mts")
+	imprimir("El peso de Citlaly es: "+pesoCitlaly+" Kg")
+	imprimir("El IMC de Citlaly es: "+imcCitlaly);	
+
+
+
+</script>
